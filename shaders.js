@@ -71,7 +71,7 @@ void main() {
         me.z = me.z - 0.01*((area(A,B,C)+area(B,C,D))-4.);
 
         vec4 pr = vec4(e.z,w.z,n.z,s.z);
-        me.xy = me.xy + 100 .* vec2(pr.x-pr.y, pr.z-pr.w)/ur;
+        me.xy = me.xy + 100. * vec2(pr.x-pr.y, pr.z-pr.w)/ur;
 
         me.xy *= uFluidDecay;
         me.z *= uTrailLength;
